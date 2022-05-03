@@ -28,12 +28,12 @@ public final class FastCrystalsPlugin extends JavaPlugin implements Listener {
         String disableMessage = colorize(Objects.requireNonNull(this.getConfig().getString("disableMessage")));
         Objects.requireNonNull(getCommand("fastcrystals")).setExecutor(((sender, command, label, args) -> {
             if (sender instanceof Player player) {
-                if (playersUUID.contains(player.getUniqueId())) {
+                if (this.playersUUID.contains(player.getUniqueId())) {
                     player.sendMessage(disableMessage);
-                    playersUUID.remove(player.getUniqueId());
+                    this.playersUUID.remove(player.getUniqueId());
                 } else {
                     player.sendMessage(enableMessage);
-                    playersUUID.add(player.getUniqueId());
+                    this.playersUUID.add(player.getUniqueId());
                 }
             }
             return false;
@@ -43,7 +43,7 @@ public final class FastCrystalsPlugin extends JavaPlugin implements Listener {
 
     @EventHandler(priority = EventPriority.HIGHEST)
     public void event(EntityDamageByEntityEvent event) {
-        if (event.getDamager() instanceof Player player && event.getEntity() instanceof EnderCrystal && playersUUID.contains(player.getUniqueId()))
+        if (event.getDamager() instanceof Player player && event.getEntity() instanceof EnderCrystal && this.playersUUID.contains(player.getUniqueId()))
             ((CraftPlayer) player).getHandle().b.a(new PacketPlayOutEntityDestroy(event.getEntity().getEntityId()));
     }
 

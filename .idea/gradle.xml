@@ -8,6 +8,8 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/fast-crystals-plugin-1.16" />
+            <option value="$PROJECT_DIR$/fast-crystals-plugin-1.18" />
           </set>
         </option>
       </GradleProjectSettings>

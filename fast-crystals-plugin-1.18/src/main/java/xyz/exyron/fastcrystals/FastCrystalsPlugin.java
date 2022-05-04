@@ -24,8 +24,10 @@ public final class FastCrystalsPlugin extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
         saveDefaultConfig();
+
         String enableMessage = colorize(Objects.requireNonNull(this.getConfig().getString("enableMessage")));
         String disableMessage = colorize(Objects.requireNonNull(this.getConfig().getString("disableMessage")));
+
         Objects.requireNonNull(getCommand("fastcrystals")).setExecutor(((sender, command, label, args) -> {
             if (sender instanceof Player player) {
                 if (this.playersUUID.contains(player.getUniqueId())) {
@@ -38,6 +40,7 @@ public final class FastCrystalsPlugin extends JavaPlugin implements Listener {
             }
             return false;
         }));
+
         getServer().getPluginManager().registerEvents(this, this);
     }
 
@@ -52,11 +55,14 @@ public final class FastCrystalsPlugin extends JavaPlugin implements Listener {
     private String colorize(String message) {
         Matcher matcher = HEX_PATTERN.matcher(message);
         StringBuilder result = new StringBuilder();
+
         while (matcher.find()) {
             matcher.appendReplacement(result, ChatColor.of(matcher.group()).toString());
         }
+
         matcher.appendTail(result);
         message = result.toString();
+
         return ChatColor.translateAlternateColorCodes('&', message
                 .replace(">>", "\u00BB")
                 .replace("<<", "\u00AB"));

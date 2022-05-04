@@ -1,7 +1,0 @@
-name: Exyron-FastCrystals
-version: 1.0
-api-version: 1.13
-main: xyz.exyron.fastcrystals.FastCrystalsPlugin
-authors: [Exyron.XYZ, KamlaX]
-commands:
-  fastcrystals:

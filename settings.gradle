@@ -1,4 +1,5 @@
 rootProject.name = 'FastCrystalsPlugin'
 include 'fast-crystals-plugin-1.16'
 include 'fast-crystals-plugin-1.18'
+include 'fast-crystals-plugin-1.17'
 

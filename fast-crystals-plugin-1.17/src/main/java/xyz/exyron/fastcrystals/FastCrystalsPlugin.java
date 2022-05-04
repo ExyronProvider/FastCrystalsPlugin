@@ -1,8 +1,8 @@
 package xyz.exyron.fastcrystals;
 
 import net.md_5.bungee.api.ChatColor;
-import net.minecraft.server.v1_16_R3.PacketPlayOutEntityDestroy;
-import org.bukkit.craftbukkit.v1_16_R3.entity.CraftPlayer;
+import net.minecraft.network.protocol.game.PacketPlayOutEntityDestroy;
+import org.bukkit.craftbukkit.v1_17_R1.entity.CraftPlayer;
 import org.bukkit.entity.EnderCrystal;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -47,7 +47,7 @@ public final class FastCrystalsPlugin extends JavaPlugin implements Listener {
     @EventHandler(priority = EventPriority.HIGHEST)
     public void event(EntityDamageByEntityEvent event) {
         if (event.getDamager() instanceof Player player && event.getEntity() instanceof EnderCrystal && this.playersUUID.contains(player.getUniqueId()))
-            ((CraftPlayer) player).getHandle().playerConnection.sendPacket(new PacketPlayOutEntityDestroy(event.getEntity().getEntityId()));
+            ((CraftPlayer) player).getHandle().b.sendPacket(new PacketPlayOutEntityDestroy(event.getEntity().getEntityId()));
     }
 
     private final Pattern HEX_PATTERN = Pattern.compile("#[A-Fa-f0-9]{6}");

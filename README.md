@@ -8,7 +8,7 @@ FastCrystals is an addon that enables more dynamic Crystal PvP gameplay. It is a
 
 # Requirements
 
-Due to the diversity between versions 1.16, 1.17, 1.18, we decided to make 2 separate plugins. 
+Due to the diversity between versions 1.16, 1.17, 1.18, we decided to make 3 separate plugins. 
 
 For 1.16 minecraft version:
  - Java 16

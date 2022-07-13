@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
 import net.md_5.bungee.api.ChatColor;
 import net.minecraft.network.protocol.game.PacketPlayOutEntityDestroy;
 import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.craftbukkit.v1_17_R1.entity.CraftPlayer;
+import org.bukkit.craftbukkit.v1_19_R1.entity.CraftPlayer;
 import org.bukkit.entity.EnderCrystal;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -28,7 +28,7 @@ public final class FastCrystalsPlugin extends JavaPlugin implements Listener {
 
   @Override
   public void onEnable() {
-    this.saveDefaultConfig();
+    saveDefaultConfig();
 
     String enableMessage = colorize(Objects.requireNonNull(this.getConfig().getString("enableMessage")));
     String disableMessage = colorize(Objects.requireNonNull(this.getConfig().getString("disableMessage")));
@@ -46,13 +46,13 @@ public final class FastCrystalsPlugin extends JavaPlugin implements Listener {
       return false;
     }));
 
-    this.getServer().getPluginManager().registerEvents(this, this);
+    getServer().getPluginManager().registerEvents(this, this);
   }
 
   @EventHandler(priority = EventPriority.HIGHEST)
   public void onEntityDamageByEntity(EntityDamageByEntityEvent event) {
     if (event.getDamager() instanceof Player player && event.getEntity() instanceof EnderCrystal && this.playersUUID.contains(player.getUniqueId())) {
-      ((CraftPlayer) player).getHandle().b.sendPacket(new PacketPlayOutEntityDestroy(event.getEntity().getEntityId()));
+      ((CraftPlayer) player).getHandle().b.a(new PacketPlayOutEntityDestroy(event.getEntity().getEntityId()));
     }
   }
 

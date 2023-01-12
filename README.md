@@ -27,7 +27,7 @@ For 1.18 minecraft version:
  
 For 1.19 minecraft version:
  - Java 17 and higher
- - Server version 1.19
+ - Server version 1.19 - 1.19.2
  - Click <a href="https://github.com/ExyronProvider/FastCrystalsPlugin/releases/download/FastCrystalsPlugin/fast-crystals-plugin-1.19.jar">here</a> to download plugin for 1.19!
 
 For 1.19.3 minecraft version:

@@ -3,4 +3,5 @@ include 'fast-crystals-plugin-1.16'
 include 'fast-crystals-plugin-1.18'
 include 'fast-crystals-plugin-1.17'
 include 'fast-crystals-plugin-1.19'
+include 'fast-crystals-plugin-1.19.3'
 

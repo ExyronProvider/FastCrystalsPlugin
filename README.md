@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://i.imgur.com/jOxHje1.png" width="250" height="150">
+  <img src="https://i.imgur.com/jOxHje1.png" width="300" height="180">
 </p>
 
 # FastCrystals Plugin
@@ -8,7 +8,7 @@ FastCrystals is an addon that enables more dynamic Crystal PvP gameplay. It is a
 
 # Requirements
 
-Due to the diversity between versions 1.16, 1.17, 1.18, 1.19, 1.19.3, 1.19.4, 1.20 we decided to make 7 separate plugins. 
+Due to the diversity between versions 1.16, 1.17, 1.18, 1.19, 1.19.3, 1.19.4, 1.20 and 1.20.2 we decided to make 8 separate plugins. 
 
 For 1.16 minecraft version:
  - Java 16
@@ -45,6 +45,11 @@ For 1.20 minecraft version:
  - Server version 1.20
  - Click <a href="https://github.com/ExyronProvider/FastCrystalsPlugin/releases/download/FastCrystalsPlugin/fast-crystals-plugin-1.20.jar">here</a> to download plugin for 1.20!
 
+For 1.20.2 minecraft version:
+- Java 17 and higher
+- Server version 1.20
+- Click <a href="https://github.com/ExyronProvider/FastCrystalsPlugin/releases/download/FastCrystalsPlugin/fast-crystals-plugin-1.20.2.jar">here</a> to download plugin for 1.20.2!
+- 
 # Command presentation
 
 Messages are configurable in the file **/Exyron-FastCrystals/config.yml**

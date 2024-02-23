@@ -61,4 +61,4 @@ Messages are configurable in the file **/Exyron-FastCrystals/config.yml**
 
 # Contact
 
-Click <a href="http://discord.exyron.xyz/">here</a> to join our discord!
+Click <a href="http://exyron.xyz/">here</a> to get more details and contact information!

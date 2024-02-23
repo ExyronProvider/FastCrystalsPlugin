@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
@@ -15,6 +16,7 @@
             <option value="$PROJECT_DIR$/fast-crystals-plugin-1.19.4" />
             <option value="$PROJECT_DIR$/fast-crystals-plugin-1.20" />
             <option value="$PROJECT_DIR$/fast-crystals-plugin-1.20.2" />
+            <option value="$PROJECT_DIR$/fast-crystals-plugin-1.20.4" />
           </set>
         </option>
       </GradleProjectSettings>

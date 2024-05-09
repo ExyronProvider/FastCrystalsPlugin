@@ -47,12 +47,12 @@ For 1.20 minecraft version:
 
 For 1.20.2 minecraft version:
 - Java 17 and higher
-- Server version 1.20
+- Server version 1.20.1 - 1.20.2
 - Click <a href="https://github.com/ExyronProvider/FastCrystalsPlugin/releases/download/FastCrystalsPlugin/fast-crystals-plugin-1.20.2.jar">here</a> to download plugin for 1.20.2!
 
 For 1.20.4 minecraft version:
 - Java 17 and higher
-- Server version 1.20
+- Server version 1.20.3 - 1.20.4
 - Click <a href="https://github.com/ExyronProvider/FastCrystalsPlugin/releases/download/FastCrystalsPlugin/fast-crystals-plugin-1.20.4.jar">here</a> to download plugin for 1.20.4!
   
 # Command presentation
@@ -61,4 +61,4 @@ Messages are configurable in the file **/Exyron-FastCrystals/config.yml**
 
 # Contact
 
-Click <a href="http://discord.exyron.xyz/">here</a> to join our discord!
+Click <a href="http://exyron.xyz/">here</a> to get more details and contact information!

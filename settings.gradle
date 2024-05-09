@@ -1,12 +1,19 @@
+plugins {
+    id("org.gradle.toolchains.foojay-resolver-convention") version("0.5.0")
+}
+
 rootProject.name = 'FastCrystalsPlugin'
 
-include 'fast-crystals-plugin-1.16'
-include 'fast-crystals-plugin-1.18'
-include 'fast-crystals-plugin-1.17'
-include 'fast-crystals-plugin-1.19'
-include 'fast-crystals-plugin-1.19.3'
-include 'fast-crystals-plugin-1.19.4'
-include 'fast-crystals-plugin-1.20'
-include 'fast-crystals-plugin-1.20.2'
-include 'fast-crystals-plugin-1.20.4'
+include 'core'
+include 'shared'
+include 'v1_16'
+include 'v1_17'
+include 'v1_18'
+include 'v1_19'
+include 'v1_19_3'
+include 'v1_19_4'
+include 'v1_20'
+include 'v1_20_2'
+include 'v1_20_4'
+include 'v1_20_6'
 

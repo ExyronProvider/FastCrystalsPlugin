@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="16" />
+    <bytecodeTargetLevel target="17">
+      <module name="FastCrystalsPlugin.fast-crystals-plugin-1.18.main" target="17" />
+      <module name="FastCrystalsPlugin.fast-crystals-plugin-1.18.test" target="17" />
+      <module name="FastCrystalsPlugin.fast-crystals-plugin-1.19.3.main" target="17" />
+      <module name="FastCrystalsPlugin.fast-crystals-plugin-1.19.3.test" target="17" />
+      <module name="FastCrystalsPlugin.fast-crystals-plugin-1.19.4.main" target="17" />
+      <module name="FastCrystalsPlugin.fast-crystals-plugin-1.19.4.test" target="17" />
+      <module name="FastCrystalsPlugin.fast-crystals-plugin-1.19.main" target="17" />
+      <module name="FastCrystalsPlugin.fast-crystals-plugin-1.19.test" target="17" />
+      <module name="FastCrystalsPlugin.fast-crystals-plugin-1.20.2.main" target="17" />
+      <module name="FastCrystalsPlugin.fast-crystals-plugin-1.20.2.test" target="17" />
+      <module name="FastCrystalsPlugin.fast-crystals-plugin-1.20.4.main" target="17" />
+      <module name="FastCrystalsPlugin.fast-crystals-plugin-1.20.4.test" target="17" />
+      <module name="FastCrystalsPlugin.fast-crystals-plugin-1.20.main" target="17" />
+      <module name="FastCrystalsPlugin.fast-crystals-plugin-1.20.test" target="17" />
+      <module name="v1_18" target="17" />
+      <module name="v1_19" target="17" />
+      <module name="v1_19_3" target="17" />
+      <module name="v1_19_4" target="17" />
+      <module name="v1_20" target="17" />
+      <module name="v1_20_2" target="17" />
+      <module name="v1_20_4" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>

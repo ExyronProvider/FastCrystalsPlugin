@@ -5,18 +5,22 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="17" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/fast-crystals-plugin-1.16" />
-            <option value="$PROJECT_DIR$/fast-crystals-plugin-1.17" />
-            <option value="$PROJECT_DIR$/fast-crystals-plugin-1.18" />
-            <option value="$PROJECT_DIR$/fast-crystals-plugin-1.19" />
-            <option value="$PROJECT_DIR$/fast-crystals-plugin-1.19.3" />
-            <option value="$PROJECT_DIR$/fast-crystals-plugin-1.19.4" />
-            <option value="$PROJECT_DIR$/fast-crystals-plugin-1.20" />
-            <option value="$PROJECT_DIR$/fast-crystals-plugin-1.20.2" />
-            <option value="$PROJECT_DIR$/fast-crystals-plugin-1.20.4" />
+            <option value="$PROJECT_DIR$/core" />
+            <option value="$PROJECT_DIR$/shared" />
+            <option value="$PROJECT_DIR$/v1_16" />
+            <option value="$PROJECT_DIR$/v1_17" />
+            <option value="$PROJECT_DIR$/v1_18" />
+            <option value="$PROJECT_DIR$/v1_19" />
+            <option value="$PROJECT_DIR$/v1_19_3" />
+            <option value="$PROJECT_DIR$/v1_19_4" />
+            <option value="$PROJECT_DIR$/v1_20" />
+            <option value="$PROJECT_DIR$/v1_20_2" />
+            <option value="$PROJECT_DIR$/v1_20_4" />
+            <option value="$PROJECT_DIR$/v1_20_6" />
           </set>
         </option>
       </GradleProjectSettings>

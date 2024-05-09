@@ -3,8 +3,18 @@ plugins {
 }
 
 group 'xyz.exyron.fastcrystals'
-version '1.0-SNAPSHOT'
+version '1.0'
 
-repositories {
-    mavenCentral()
+subprojects {
+    afterEvaluate {
+        def isShadowPluginApplied = project.plugins.hasPlugin('com.github.johnrengelman.shadow')
+
+        if (isShadowPluginApplied) {
+            tasks.named('shadowJar') {
+                it.archiveFileName.set("${rootProject.name}-${rootProject.version}.jar")
+                it.destinationDirectory.set(file("${project.rootDir}/build/libs"))
+                it.relocate 'org.bstats', 'xyz.exyron.fastcrystals.bstats'
+            }
+        }
+    }
 }

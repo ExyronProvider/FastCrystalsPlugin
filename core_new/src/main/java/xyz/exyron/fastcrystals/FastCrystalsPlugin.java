@@ -86,19 +86,12 @@ public final class FastCrystalsPlugin extends JavaPlugin implements Listener {
 
   private CrystalDamage assignCrystalDamageFromServerVersion(String version) {
     return switch (version) {
-      case "1.20.4", "1.20.3" -> new CrystalDamage_v1_20_4();
-      case "1.20", "1.20.1", "1.20.2" -> new CrystalDamage_v1_20_2();
-      case "1.19.4" -> new CrystalDamage_v1_19_4();
-      case "1.19.3" -> new CrystalDamage_v1_19_3();
-      case "1.19.2", "1.19.1", "1.19" -> new CrystalDamage_v1_19();
-      case "1.18.2", "1.18.1", "1.18" -> new CrystalDamage_v1_18();
-      case "1.17.2", "1.17.1", "1.17" -> new CrystalDamage_v1_17();
-      case "1.16.5", "1.16.4" -> new CrystalDamage_v1_16();
+      case "1.20.5", "1.20.6" -> new CrystalDamage_v1_20_6();
 
       default -> {
         Bukkit.getPluginManager().disablePlugin(this);
         throw new IllegalStateException(
-            "Plugin is disabling due to unsupported minecraft version (" + version + "). We currently support only 1.16.4+ versions."
+            "Plugin is disabling due to unsupported minecraft version (" + version + "). This version of plugin support only 1.20.5+ versions."
         );
       }
     };

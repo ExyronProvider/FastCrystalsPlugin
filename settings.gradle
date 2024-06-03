@@ -1,10 +1,7 @@
-plugins {
-    id("org.gradle.toolchains.foojay-resolver-convention") version("0.5.0")
-}
-
 rootProject.name = 'FastCrystalsPlugin'
 
 include 'core'
+include 'core_new'
 include 'shared'
 include 'v1_16'
 include 'v1_17'

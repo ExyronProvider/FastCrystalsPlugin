@@ -10,6 +10,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/core" />
+            <option value="$PROJECT_DIR$/core_new" />
             <option value="$PROJECT_DIR$/shared" />
             <option value="$PROJECT_DIR$/v1_16" />
             <option value="$PROJECT_DIR$/v1_17" />

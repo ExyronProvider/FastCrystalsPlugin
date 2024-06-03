@@ -9,13 +9,14 @@ version '1.0'
 repositories {
     mavenCentral()
     maven { url 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
-    maven { url 'https://hub.spigotmc.org/nexus/content/groups/public/' }
     maven { url 'https://repo.codemc.org/repository/nms/' }
+    maven { url 'https://repo.extendedclip.com/content/repositories/placeholderapi/' }
 }
 
 dependencies {
     compileOnly 'org.spigotmc:spigot:1.16.5-R0.1-SNAPSHOT'
     implementation 'org.bstats:bstats-bukkit:3.0.2'
+    compileOnly 'me.clip:placeholderapi:2.11.6'
 
     implementation project (':shared')
     implementation project (':v1_16')
@@ -27,5 +28,4 @@ dependencies {
     implementation project (':v1_20')
     implementation project (':v1_20_2')
     implementation project (':v1_20_4')
-    //implementation project (':v1_20_6')
 }
